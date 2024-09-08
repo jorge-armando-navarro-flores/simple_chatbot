@@ -13,8 +13,5 @@ with gr.Blocks() as demo:
 
     msg.submit(respond, [msg, chatbot], [msg, chatbot])
 
-def app():
-    demo.launch()
-
 if __name__ == "__main__":
-    app()
+    demo.launch()
