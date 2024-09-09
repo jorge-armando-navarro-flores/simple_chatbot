@@ -3,6 +3,7 @@ from app import get_answer, start_conversation
 
 
 with gr.Blocks() as demo:
+    start_conversation()
     chatbot = gr.Chatbot()
     msg = gr.Textbox()
     clear = gr.ClearButton([msg, chatbot])
@@ -15,5 +16,4 @@ with gr.Blocks() as demo:
     msg.submit(respond, [msg, chatbot], [msg, chatbot])
 
 if __name__ == "__main__":
-    start_conversation()
     demo.launch(server_name="0.0.0.0", server_port=7860)
