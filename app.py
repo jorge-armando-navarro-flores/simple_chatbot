@@ -1,13 +1,9 @@
 from openai_service import get_completion_from_messages
-from db import Conversation
+from db import context
 
-conversation = Conversation()
-
-def get_answer(message):
-    conversation.add_user_message(message)
-    response = get_completion_from_messages(conversation.get_messages(), temperature=1)
-    conversation.add_assistant_response(response)
+def get_answer(messages):
+    response = get_completion_from_messages(messages, temperature=1)
     return response
 
-def start_conversation():
-    conversation.start()
+def get_context():
+    return context
