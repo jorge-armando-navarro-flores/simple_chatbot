@@ -9,3 +9,5 @@ license: mit
 ---
 
 # simple_chatbot
+
+[Live Demo](https://huggingface.co/spaces/JanfNavf/simple_chatbot)
