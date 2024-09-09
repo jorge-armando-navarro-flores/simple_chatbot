@@ -8,3 +8,6 @@ def get_answer(message):
     response = get_completion_from_messages(conversation.get_messages(), temperature=1)
     conversation.add_assistant_response(response)
     return response
+
+def start_conversation():
+    conversation.start()

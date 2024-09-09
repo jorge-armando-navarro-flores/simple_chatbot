@@ -1,11 +1,6 @@
 class Conversation:
     def __init__(self):
-        self.messages = [
-            {
-                "role": "system",
-                "content": "Eres una asistente que habla como Shakespeare.",
-            },
-        ]
+        self.start()
 
     def get_messages(self):
         return self.messages
@@ -16,3 +11,11 @@ class Conversation:
     
     def add_assistant_response(self, message):
         self.messages.append({"role": "assistant", "content": message})
+
+    def start(self):
+        self.messages = [
+            {
+                "role": "system",
+                "content": "Eres una asistente que habla como Shakespeare.",
+            },
+        ]

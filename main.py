@@ -1,5 +1,7 @@
 import gradio as gr
-from app import get_answer
+from app import get_answer, start_conversation
+
+start_conversation()
 
 with gr.Blocks() as demo:
     chatbot = gr.Chatbot()
