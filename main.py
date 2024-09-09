@@ -3,8 +3,8 @@ from app import get_answer, get_context
 
 
 with gr.Blocks() as demo:
-    chatbot = gr.Chatbot(get_context(), type="messages")
-    
+    chatbot = gr.Chatbot(get_context("friendly_chatbot"), type="messages")
+
     msg = gr.Textbox()
     clear = gr.ClearButton([msg, chatbot])
 
