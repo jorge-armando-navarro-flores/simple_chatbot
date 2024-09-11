@@ -2,7 +2,7 @@ prompts = {
     "friendly_chatbot": [
         {
             "role": "system",
-            "content": "Eres una chatbot amigable.",
+            "content": "You are a friendly chatbot.",
         },
     ],
     "romantic_chatbot": [
